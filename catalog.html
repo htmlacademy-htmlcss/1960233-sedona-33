@@ -99,8 +99,9 @@
                 <label class="control">
                   <input
                     class="control-input"
-                    type="checkbox"
-                    name="hotel"
+                    type="radio"
+                    name="hotel-group"
+                    value="hotel"
                     checked
                   />
                   Гостиница
@@ -110,16 +111,21 @@
                 <label class="control">
                   <input
                     class="control-input"
-                    type="checkbox"
-                    name="motel"
-                    checked
+                    type="radio"
+                    name="hotel-group"
+                    value="motel"
                   />
                   Мотель
                 </label>
               </li>
               <li class="catalog-filter-item">
                 <label class="control">
-                  <input class="control-input" type="checkbox" name="apart" />
+                  <input
+                    class="control-input"
+                    type="radio"
+                    name="hotel-group"
+                    value="apart"
+                  />
                   Апартаменты
                 </label>
               </li>
@@ -128,6 +134,25 @@
           <button class="button" type="submit">Применить</button>
         </form>
       </section>
+      <section class="range-price">
+        <h2>Стоимость, ₽:</h2>
+        <div class="control-price">
+          <label class="min-price">
+            <input type="text" name="min-price" value="0" />от
+          </label>
+          <label class="max-price">
+            <input type="text" name="max-price" value="9000" />до
+          </label>
+        </div>
+      </section>
+      <section class="sort">
+        <b class="quantity">Найдено гостиниц: 38</b>
+      </section>
+      <select class="select-control" aria-label="Сортировка">
+        <option value="popular">Сначала популярное</option>
+        <option value="cheap">Сначала дешёвое</option>
+        <option value="expensive">Сначала дорогое</option>
+      </select>
       <section class="subscription">
         <h2 class="visually-hidden">Подписка на рассылку</h2>
         <p class="subscription-head">Подпишитесь на рассылку</p>
@@ -149,17 +174,20 @@
         <h2 class="visually-hidden">Соц сети</h2>
         <ul class="footer-social-list">
           <li class="footer-social-item">
-            <a class="button" href="https://twitter.com/htmlacademy_ru">
+            <a class="social-link" href="https://twitter.com/htmlacademy_ru">
               <span class="visually-hidden">Твиттер</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="https://www.facebook.com/htmlacademy">
+            <a class="social-link" href="https://www.facebook.com/htmlacademy">
               <span class="visually-hidden">Фейсбук</span>
             </a>
           </li>
           <li class="footer-social-item">
-            <a class="button" href="https://www.youtube.com/c/HTMLAcademyRUS">
+            <a
+              class="social-link"
+              href="https://www.youtube.com/c/HTMLAcademyRUS"
+            >
               <span class="visually-hidden">Тытруба</span>
             </a>
           </li>
