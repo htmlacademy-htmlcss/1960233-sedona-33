@@ -6,19 +6,19 @@
   </head>
   <body>
     <header class="page-header">
-      <a class="main-logo">
+      <a class="main-logo" href="index.html">
         <img src="" alt="Логотип Седона" />
       </a>
       <nav class="navigation">
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link">Главная</a>
+            <a class="navigation-link" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="info.html">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Гостиницы</a>
+            <a class="navigation-link">Гостиницы</a>
           </li>
         </ul>
         <ul class="navigation-list navigation-user">
@@ -54,27 +54,78 @@
       </header>
       <section class="catalog-hotels">
         <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
-        <form class="catalog-filter" action="https://echo.htmlacademy.ru/" method="get">
+        <form
+          class="catalog-filter"
+          action="https://echo.htmlacademy.ru/"
+          method="get"
+        >
           <fieldset class="catalog-filter-group">
             <legend class="catalog-filter-title">Инфраструктура:</legend>
             <ul class="catalog-filter-list">
               <li class="catalog-filter-item">
-                <label>
-                  <input type="checkbox" name="pool" checked> Бассейн
+                <label class="control">
+                  <input
+                    class="control-input"
+                    type="checkbox"
+                    name="pool"
+                    checked
+                  />
+                  Бассейн
                 </label>
               </li>
               <li class="catalog-filter-item">
-                <label>
-                  <input type="checkbox" name="parking" checked> Парковка
+                <label class="control">
+                  <input
+                    class="control-input"
+                    type="checkbox"
+                    name="parking"
+                    checked
+                  />
+                  Парковка
                 </label>
               </li>
               <li class="catalog-filter-item">
-                <label>
-                  <input type="checkbox" name="wifi"> WIFI
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="wifi" />
+                  WIFI
                 </label>
               </li>
             </ul>
-            <button class="button" type="submit">Применить</button>
+          </fieldset>
+          <fieldset class="catalog-filter-group">
+            <legend class="catalog-filter-title">Тип жилья:</legend>
+            <ul class="catalog-filter-list">
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input
+                    class="control-input"
+                    type="checkbox"
+                    name="hotel"
+                    checked
+                  />
+                  Гостиница
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input
+                    class="control-input"
+                    type="checkbox"
+                    name="motel"
+                    checked
+                  />
+                  Мотель
+                </label>
+              </li>
+              <li class="catalog-filter-item">
+                <label class="control">
+                  <input class="control-input" type="checkbox" name="apart" />
+                  Апартаменты
+                </label>
+              </li>
+            </ul>
+          </fieldset>
+          <button class="button" type="submit">Применить</button>
         </form>
       </section>
       <section class="subscription">
