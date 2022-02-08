@@ -15,11 +15,13 @@
 }
 
 body {
+  font-weight: 400;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
   line-height: 21px;
   color: #333333;
   background-color: #ffffff;
+  text-transform: uppercase;
 }
 
 /*Pages*/
@@ -40,8 +42,13 @@ body {
   text-transform: uppercase;
 }
 
+.main-welcome {
+  text-align: center;
+  background-image: url("../images/index/index-background.jpg");
+  background-repeat: no-repeat;
+}
+
 .main-background {
-  background-color: url("images/index/index-background.jpg");
 }
 
 .block {
