@@ -14,27 +14,40 @@
   font-display: swap;
 }
 
-body {
+@font-face {
+  font-family: PT Sans;
+  font-style: italic;
   font-weight: 400;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: PT Sans;
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+body {
   font-family: "PT Sans", sans-serif;
-  font-size: 18px;
-  line-height: 21px;
-  color: #333333;
-  background-color: #ffffff;
-  text-transform: uppercase;
+  font-size: 20px;
+  line-height: 26px;
+  color: #000000;
+  background-color: #aef4f4;
 }
 
 /*Pages*/
 
 .page-header {
   color: #000000;
-  background-color: #e5e5e5;
+  background-color: #aef4f4;
 }
 
 .navigation-link {
-  font-family: "PT Sans Narrow" sans-serif;
+  font-family: "PT Sans" sans-serif;
   font-size: 20px;
-  line-height: 26px;
   font-weight: 700;
   text-align: center;
   color: inherit;
@@ -42,22 +55,37 @@ body {
   text-transform: uppercase;
 }
 
-.main-welcome {
+.main-background {
+  background-size: 100% auto;
   text-align: center;
   background-image: url("../images/index/index-background.jpg");
   background-repeat: no-repeat;
 }
 
-.main-background {
+.main-promo {
+  text-align: center;
 }
+
+/* List */
 
 .block {
   text-align: center;
 }
 
-.block-content {
-  font-family: "PT Sans Narrow", sans-serif;
+/* Title */
+.block h2{
+  text-transform: uppercase;
+}
+
+.case-blue h2 {
   font-size: 24px;
   line-height: 28px;
+  color: white;
   text-transform: uppercase;
+}
+
+.case-blue li {
+  font-size: 18px;
+  line-height: 21px;
+  color: white;
 }
