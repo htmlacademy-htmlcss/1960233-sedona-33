@@ -103,6 +103,23 @@ body {
 }
 
 /* Title */
+
+.case-blue{
+  background-color: #83B3D3;
+}
+
+.case-gray{
+  background-color: rgba(131, 179, 211, 0.12);;
+}
+
+.case-white{
+  background-color: #FFFFFF;
+}
+
+.case-dark{
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
 .block h2 {
   color:#000000
   font-size: 24px;
