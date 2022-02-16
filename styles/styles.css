@@ -311,13 +311,20 @@ li {
   line-height: 23px;
 }
 
+.catalog-hotels{
+  display:flex;
+  }
+
 .catalog-filter-group {
-  display: flex;
-  justify-content: space-between;
+  display: inline-block;
 }
 
 .hotels-block {
   display: inline;
+}
+
+.range-prise{
+  position: absolute;
 }
 
 .button-submit {
@@ -428,6 +435,7 @@ li {
   background-color: #83b3d3;
   text-decoration: none;
 }
+
 .footer-page-container {
   display: flex;
   width: 1200px;
@@ -438,4 +446,20 @@ li {
   font-size: 18px;
   line-height: 23px;
   color: #333333;
+}
+
+.footer-social-list{
+  width: 107px;
+  height: 18px;
+}
+
+.footer-phone{
+  width:720px;
+  height: 50px;
+}
+
+.logo-academy{
+  width: 115px;
+  height: 34px;
+  margin-left: auto;
 }
