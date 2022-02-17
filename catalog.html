@@ -7,6 +7,7 @@
   </head>
   <body>
     <header class="page-header">
+      <nav class="navigation">
       <a class="main-logo" href="index.html">
         <img
           src="images/logosedona.png"
@@ -46,7 +47,8 @@
         </ul>
       </nav>
     </header>
-    <main class="main-inner">
+    <main class="main-inner main-container">
+      <div class="page-container">
       <div class="filter-catalog">
         <header class="inner-header">
           <h1 class="inner-header-title">Гостиницы Седоны</h1>
@@ -60,7 +62,7 @@
           </ul>
         </header>
         <section class="catalog-hotels">
-          <h2 class="visually-hidden">Список гостиниц с фильтрами</h2>
+          <h2 class="visually-hidden" hidden>Список гостиниц с фильтрами</h2>
           <form
             class="catalog-filter"
             action="https://echo.htmlacademy.ru/"
@@ -157,7 +159,10 @@
             <button class="button-submit" type="submit">Применить</button>
             <a class="reset-link" type="reset">Сбросить</a>
           </form>
-          <b class="quantity">Найдено гостиниц: 38</b>
+        </section>
+      </div>
+      <div class="hotels-block">
+        <b class="quantity">Найдено гостиниц: 38</b>
           <select class="select-control" aria-label="Сортировка">
             <option value="popular">Сначала дешёвые</option>
             <option value="cheap">Сначала популярные</option>
@@ -172,9 +177,6 @@
           <a class="button" href="#">
             <span class="visually-hidden">Показать список</span>
           </a>
-        </section>
-      </div>
-      <div class="hotels-block">
         <article class="product-card">
           <a class="product-card-link" href="#">
             <img
@@ -329,8 +331,10 @@
           <button class="button-subscribe" type="submit">Подписаться</button>
         </form>
       </section>
+      </div>
     </main>
     <footer class="footer-page">
+      <div class="footer-page-container">
       <section class="footer-social">
         <h2 class="visually-hidden">Соц сети</h2>
         <ul class="footer-social-list">
@@ -370,6 +374,7 @@
           />
         </a>
       </section>
+      </div>
     </footer>
   </body>
 </html>
