@@ -432,6 +432,11 @@ li {
   padding: 0;
 }
 
+.product-card{
+  width: 340px;
+  height: 438px;
+}
+
 .range-prise {
   position: absolute;
 }
@@ -467,6 +472,10 @@ li {
 }
 
 .more {
+  display: block;
+  width: 133px;
+  height: 37px;
+  margin-top: 16px;
   font-family: inherit;
   font-size: 16px;
   line-height: 21px;
@@ -489,6 +498,7 @@ li {
   text-decoration: none;
   text-transform: uppercase;
 }
+
 
 .product-card-title {
   font-size: 24px;
